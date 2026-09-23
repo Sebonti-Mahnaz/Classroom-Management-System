@@ -1,0 +1,169 @@
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+body-pro 				 { 
+    background:url(../bba5cf5acb1e03045d81555821b986c7461ca64c.jpg);
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container-pro 		{ 
+  font-family:'Roboto';
+  width:600px; 
+   margin-top: 120px;
+  display:block; 
+  background-color:rgba(114, 120, 185, 0.94);
+  padding:50px 50px 50px;
+    margin-left: 660px;
+    border-radius: 25px;
+    
+    ;
+    
+  
+}
+.container-pro2 		{ 
+  font-family:'Roboto';
+  width:850px; 
+    height: 750px;
+   margin-top: 120px;
+  display:block; 
+  background-color:rgba(115, 121, 186, 0.96);
+  padding:50px 50px 50px;
+    margin-left: 550px;
+    border-radius: 25px;
+    
+    ;
+    
+  
+}
+h2 		 { 
+  
+  margin-bottom:50px; 
+}
+h2-pro small { 
+  font-weight:normal; 
+  color:#888; 
+  display:block; 
+}
+.footer-pro 	{ text-align:center; }
+.footer-pro a  { color:black; }
+
+/* form starting stylings ------------------------------- */
+.group-pro 			  { 
+  position:relative; 
+  margin-bottom:50px; 
+}
+input 				{
+  font-size:16px;
+  padding:10px 10px 10px 10px;
+  display:block;
+  width:400px;
+  border:none;
+  border-bottom:1px solid black;
+    background-color: #5264AE
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:black; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:black;
+}
+
+/* BOTTOM BARS ================================= */
+.bar-pro 	{ position:relative; display:block; width:300px; }
+.bar-pro:before, .bar-pro:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:black; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar-pro:before {
+  left:50%;
+}
+.bar-pro:after {
+  right:50%; 
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:black;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
